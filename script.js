@@ -338,7 +338,7 @@ function loadEarthquakeMap(){
 
         })
         .catch(err => {
-            alert("No se pudo cargar el XML de sismos.");
+            alert("Earthquake's XML can't be charged");
             console.error(err);
         });
 }
