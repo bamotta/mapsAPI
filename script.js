@@ -266,6 +266,8 @@ function loadMarkersFromLocalStorage() {
                 }
             });
 
+            marker.type = stored.type;
+
             const infoWindow = new google.maps.InfoWindow({
                 content: `<strong>${stored.title}</strong>`
             });
@@ -369,7 +371,7 @@ function loadEarthquakeMarker(items){
                     });
                     marker.type = type;
                     marker.magnitude = magnitude;
-                    
+
                     earthquakeMarkers.push(marker);
 
                     const infoWindow = new google.maps.InfoWindow({
